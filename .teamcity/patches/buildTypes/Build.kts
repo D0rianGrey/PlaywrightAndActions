@@ -45,6 +45,7 @@ changeBuildType(RelativeId("Build")) {
     }
     steps {
         update<ScriptBuildStep>(1) {
+            enabled = false
             executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             clearConditions()
             scriptContent = """
