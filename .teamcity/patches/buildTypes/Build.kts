@@ -45,6 +45,7 @@ changeBuildType(RelativeId("Build")) {
     }
     steps {
         update<ScriptBuildStep>(1) {
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
             clearConditions()
             scriptContent = """
                 echo '87Qqr0Hc' | sudo -S npx playwright install-deps
