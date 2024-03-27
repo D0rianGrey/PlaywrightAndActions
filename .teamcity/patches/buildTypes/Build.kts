@@ -57,5 +57,9 @@ changeBuildType(RelativeId("Build")) {
             enabled = false
             clearConditions()
         }
+        update<ScriptBuildStep>(3) {
+            clearConditions()
+            scriptContent = "sudo npx playwright test"
+        }
     }
 }
