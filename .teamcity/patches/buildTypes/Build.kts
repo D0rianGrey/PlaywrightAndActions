@@ -46,7 +46,7 @@ changeBuildType(RelativeId("Build")) {
     steps {
         update<ScriptBuildStep>(1) {
             clearConditions()
-            scriptContent = "echo ’87Qqr0Hc’ | sudo -S npx playwright install-deps"
+            scriptContent = "echo '87Qqr0Hc' | sudo -S npx playwright install-deps"
         }
     }
 }
