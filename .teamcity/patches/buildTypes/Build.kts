@@ -59,7 +59,7 @@ changeBuildType(RelativeId("Build")) {
         }
         update<ScriptBuildStep>(3) {
             clearConditions()
-            scriptContent = "sudo npx playwright test"
+            scriptContent = "echo %SECURE_PASSWORD% | sudo -S npx playwright test"
         }
     }
 }
