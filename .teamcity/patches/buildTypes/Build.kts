@@ -53,5 +53,9 @@ changeBuildType(RelativeId("Build")) {
                 npx playwright install-deps
             """.trimIndent()
         }
+        update<ScriptBuildStep>(2) {
+            enabled = false
+            clearConditions()
+        }
     }
 }
